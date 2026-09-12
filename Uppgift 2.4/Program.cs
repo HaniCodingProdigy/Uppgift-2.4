@@ -7,10 +7,10 @@ namespace övning2_4
         static void Main(string[] args)
         {
             Console.WriteLine("hur många dagar ska du hyra bilen");
-            double dagar = double.Parse(Console.ReadLine());
+            int dagar = int.Parse(Console.ReadLine());
             Console.WriteLine("Hur många Kilometer ska du köra med bilen");
-            double km = double.Parse(Console.ReadLine());
-            double summa = 300 + km + (500 * (dagar - 1));
+            int km = int.Parse(Console.ReadLine());
+            int summa = 300 + km + (500 * (dagar - 1));
             Console.WriteLine("den total kostnaden är " + summa);
         }
     }
